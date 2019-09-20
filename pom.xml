@@ -7,6 +7,7 @@
     <modules>
         <module>AYD_Entity</module>
         <module>AYD_Common</module>
+        <module>AYD_Server</module>
     </modules>
 
     <parent>
