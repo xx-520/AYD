@@ -1,0 +1,14 @@
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/java1904_ayd?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+eureka:
+  instance:
+    prefer-ip-address: true #以IP地址注册到服务中心
+  client:
+    serviceUrl:
+      defaultZone: http://47.110.42.184:8080/EurekaServer/eureka/

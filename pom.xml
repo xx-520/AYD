@@ -10,6 +10,8 @@
         <module>AYD_Server</module>
         <module>AYD_Wee</module>
         <module>AYD_WeeApi</module>
+        <module>AYD_UserProvider</module>
+        <module>AYD_UserApi</module>
     </modules>
 
     <parent>
