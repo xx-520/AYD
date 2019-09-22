@@ -8,6 +8,8 @@
         <module>AYD_Entity</module>
         <module>AYD_Common</module>
         <module>AYD_Server</module>
+        <module>AYD_AydApi</module>
+        <module>AYD_server</module>
         <module>AYD_Wee</module>
         <module>AYD_WeeApi</module>
         <module>AYD_UserProvider</module>
@@ -32,11 +34,17 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+        <druid.version>1.1.20</druid.version>
+        <mybatisboot.version>2.1.0</mybatisboot.version>
+        <talentshow.version>0.1</talentshow.version>
+        <swagger.version>2.9.2</swagger.version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <logging.version>1.2</logging.version>
     </properties>
 
     <!--    公共jar-->
     <dependencies>
-<!--        redis缓存-->
+        <!--        redis缓存-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -48,7 +56,7 @@
         </dependency>
 
 
-<!--        消息队列-->
+        <!--        消息队列-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
@@ -58,7 +66,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-<!--        spring task 定时任务-->
+        <!--        spring task 定时任务-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-task</artifactId>

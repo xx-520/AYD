@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carlos.ayd.dao.WeeDao">
+
+    <insert id="add" parameterType="int">
+        insert into ayd.bookrack(bookname, imgurl, bookurl, bookid) (select bookname, imgurl, bookurl, bookid from a_books a where a.bookid = #{bookid})
+    </insert>
+
+    <update id="update" parameterType="map">
+        update bookrack set imgurl = #{imgurl} where id = #{id}
+    </update>
+
+</mapper>

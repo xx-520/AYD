@@ -9,52 +9,39 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>AYD_server</artifactId>
+    <artifactId>AYD_AydApi</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.1.20</version>
-        </dependency>
-        <!--<dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-core</artifactId>
-            <version>3.1.2</version>
-            <scope>compile</scope>
-        </dependency>-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.xx.ayd</groupId>
-            <artifactId>AYD_Entity</artifactId>
-            <version>0.1</version>
-            <scope>compile</scope>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
         </dependency>
         <dependency>
             <groupId>com.xx.ayd</groupId>
             <artifactId>AYD_Common</artifactId>
             <version>0.1</version>
-            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.xx.ayd</groupId>
+            <artifactId>AYD_Entity</artifactId>
+            <version>0.1</version>
         </dependency>
     </dependencies>
-
 
 
 </project>
