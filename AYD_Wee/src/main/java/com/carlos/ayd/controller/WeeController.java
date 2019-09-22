@@ -35,4 +35,9 @@ public class WeeController {
     public RJson update(String imgurl,int id){
         return weeService.update(imgurl,id);
     }
+
+    @PutMapping("/server/uodatepage.do")
+    public RJson updatepage(int pagination, int id) {
+        return weeService.updatepage(pagination,id);
+    }
 }

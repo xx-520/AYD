@@ -23,4 +23,7 @@ public interface WeeService {
 
     @PutMapping("/server/update.do")
     public RJson update(@RequestParam String imgurl,@RequestParam int id);
+
+    @PutMapping("/server/uodatepage.do")
+    public RJson updatepage(@RequestParam int pagination,@RequestParam int id);
 }

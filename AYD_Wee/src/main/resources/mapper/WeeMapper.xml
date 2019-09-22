@@ -10,4 +10,8 @@
         update bookrack set imgurl = #{imgurl} where id = #{id}
     </update>
 
+    <update id="updatepage" parameterType="map">
+        update bookrack set pagination = #{pagination} where id = #{id}
+    </update>
+
 </mapper>

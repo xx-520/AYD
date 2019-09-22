@@ -14,4 +14,6 @@ public interface WeeService extends IService<BookRack> {
     RJson add(int bookid);
 
     RJson update(String imgurl, int id);
+
+    RJson updatepage(int pagination, int id);
 }

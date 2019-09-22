@@ -14,4 +14,6 @@ public interface WeeDao extends BaseMapper<BookRack> {
     int add(@Param("bookid") int bookid);
 
     int update(@Param("imgurl")String imgurl, @Param("id")int id);
+
+    int updatepage(@Param("pagination")int pagination, @Param("id")int id);
 }

@@ -30,4 +30,9 @@ public class WeeApiController {
     public RJson update(@RequestParam String imgurl,@RequestParam int id){
         return weeService.update(imgurl,id);
     }
+
+    @PutMapping("/server/uodatepage.do")
+    public RJson updatepage(@RequestParam int pagination,@RequestParam int id){
+        return weeService.updatepage(pagination,id);
+    }
 }

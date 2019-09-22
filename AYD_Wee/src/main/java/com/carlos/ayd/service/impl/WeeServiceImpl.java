@@ -30,4 +30,11 @@ public class WeeServiceImpl extends ServiceImpl<WeeDao, BookRack> implements Wee
     public RJson update(String imgurl,int id) {
         return RJsonUtil.setR(weeDao.update(imgurl,id)>0,"修改书架中小说封面");
     }
+
+    @Override
+    public RJson updatepage(int pagination, int id) {
+        return RJsonUtil.setR(weeDao.updatepage(pagination,id)>0,"更新页码");
+    }
+
+
 }
