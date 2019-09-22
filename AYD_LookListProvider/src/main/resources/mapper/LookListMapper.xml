@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carlos.ayd.provider.dao.LookListDao">
+    <select id="selectLookListTop" resultType="com.xx.ayd.common.dto.LookListTopDto">
+        select b.bookid,b.bookname,b.details,b.writer,b.uploading,b.imgurl,b.bookurl,l.looks from
+        a_books b inner join (select * from a_looklist order by looks desc limit 10) l on b.bookid = l.bookid
+        order by l.looks desc
+    </select>
+</mapper>

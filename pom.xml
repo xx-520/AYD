@@ -12,6 +12,8 @@
         <module>AYD_WeeApi</module>
         <module>AYD_UserProvider</module>
         <module>AYD_UserApi</module>
+        <module>AYD_LookListProvider</module>
+        <module>AYD_LookListApi</module>
     </modules>
 
     <parent>
