@@ -8,6 +8,8 @@
         <module>AYD_Entity</module>
         <module>AYD_Common</module>
         <module>AYD_Server</module>
+        <module>AYD_Wee</module>
+        <module>AYD_WeeApi</module>
     </modules>
 
     <parent>
@@ -41,11 +43,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
-        </dependency>
+
 <!--        消息队列-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
