@@ -9,9 +9,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface BookService {
 
     /**
-     * 查询书城所有书籍
+     * 查询书城书籍详情
      */
     @GetMapping("/server/selectBook.do")
     public RJson selectBook(@RequestParam int bookid);
+
+    /**
+     * 查询书城分类书籍
+     */
+    @GetMapping("server/selectGenre.do")
+    public RJson selectGenre(@RequestParam int gid);
+
+    /**
+     * 从书籍姓名和作者查询书籍
+     */
+    @GetMapping("/server.select.do")
+    public RJson select(@RequestParam String bookname, @RequestParam String writer);
 
 }
