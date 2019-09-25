@@ -19,8 +19,8 @@ public class BookServiceImpl extends ServiceImpl<BookDao, Book> implements BookS
      * 查询书城书籍详情
      */
     @Override
-    public RJson selectBook(int bookid) {
-        Book book = bookDao.selectBook(bookid);
+    public RJson selectBook(String bookname) {
+        Book book = bookDao.selectBook(bookname);
         return RJsonUtil.setOK("OK", book);
     }
 
@@ -28,8 +28,8 @@ public class BookServiceImpl extends ServiceImpl<BookDao, Book> implements BookS
      * 查询书城分类书籍
      */
     @Override
-    public RJson selectGenre(int gid) {
-        Book book = bookDao.selectGenre(gid);
+    public RJson selectGenre(String  type) {
+        Book book = bookDao.selectGenre(type);
         return RJsonUtil.setOK("OK", book);
     }
 

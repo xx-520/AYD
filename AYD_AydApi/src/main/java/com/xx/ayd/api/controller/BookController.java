@@ -15,16 +15,16 @@ public class BookController {
      * 查询书城所有书籍
      */
     @GetMapping("/server/selectBook.do")
-    public RJson selectBook(@RequestParam int bookid) {
-        return bookService.selectBook(bookid);
+    public RJson selectBook(@RequestParam String bookname) {
+        return bookService.selectBook(bookname);
     }
 
     /**
      * 查询书城分类书籍
      */
     @GetMapping("server/selectGenre.do")
-    public RJson selectGenre(@RequestParam int gid) {
-        return bookService.selectGenre(gid);
+    public RJson selectGenre(@RequestParam String type) {
+        return bookService.selectGenre(type);
     }
 
     /**

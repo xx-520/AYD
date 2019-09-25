@@ -12,13 +12,13 @@ public interface BookService {
      * 查询书城书籍详情
      */
     @GetMapping("/server/selectBook.do")
-    public RJson selectBook(@RequestParam int bookid);
+    public RJson selectBook(@RequestParam String bookname);
 
     /**
      * 查询书城分类书籍
      */
     @GetMapping("server/selectGenre.do")
-    public RJson selectGenre(@RequestParam int gid);
+    public RJson selectGenre(@RequestParam String type);
 
     /**
      * 从书籍姓名和作者查询书籍

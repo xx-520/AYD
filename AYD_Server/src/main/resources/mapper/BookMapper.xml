@@ -7,9 +7,15 @@
 
 
     <select id="selectBook" resultType="com.xx.ayd.entity.Book">
+        select bookname,details,writer,imgurl from ayd.a_books where bookname=#{bookname}
+    </select>
 
-        select bookname,details,writer,imgurl from wode.a_books where bookid=#{bookid}
+    <select id="selectGenre" resultType="com.xx.ayd.entity.Book">
+        select bookname,details,writer,imgurl from ayd.a_books inner join ayd.a_genre on a_books.gid=a_genre.gid where type=#{type}
+    </select>
 
+    <select id="select" resultType="com.xx.ayd.entity.Book">
+        select bookname,details,writer,imgurl from ayd.a_books inner join ayd.a_genre on a_books.gid=a_genre.gid where bookname=#{bookname} or writer=#{writer}
     </select>
 
     

@@ -6,9 +6,9 @@ import com.xx.ayd.entity.Book;
 
 public interface BookService extends IService<Book> {
 
-    public RJson selectBook(int bookid);
+    public RJson selectBook(String bookname);
 
-    public RJson selectGenre(int gid);
+    public RJson selectGenre(String type);
 
     public RJson select(String bookname, String writer);
 
